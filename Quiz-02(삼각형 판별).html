@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function solution(a,b,c){
+            let answer;
+            //insert Code
+            if(a>b && a>c) {
+                if(a<b+c) answer="yes";
+                else answer="no";
+            }
+            else if(b>a && b>c){
+                if(b<a+c) answer="yes";
+                else answer="no";
+            }
+            else if(c>a && c>b){
+                if(c<b+a) answer="yes";
+                else answer="no";
+            }
+            return answer;
+        }
+        console.log(solution(6,7,11)); //yes
+        console.log(solution(13,33,17)); //no
+    </script>
+</body>
+</html>
