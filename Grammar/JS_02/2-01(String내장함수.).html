@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        /*
+         var txt="ABCDEFGHIJKLMN";
+         console.log(txt.length); //문자열의 index값이 나옴*/
+
+        /*indexof
+        //문자열에서 단어의 인덱스값을 찾아줌
+        var str="Please locate where 'locate'";
+        console.log(str.indexOf("locate"));
+        //console.log(str.indexof("choi")); //없는 단어는 출력값: -1 리턴
+
+        if(str.indexOf("locate") > -1){
+            console.log("locate 문자 발견");
+        }
+        console.log(str.lastIndexOf("locate")); */
+
+        /*search
+        var str="Please locate where 'locate'";
+        console.log(str.search("locate"));*/
+
+        //slice --헷갈리지말자
+        /*slice(인덱스,인덱스-1)
+        var str="Apple, Banana, Kiwi";
+        console.log(str.slice(7,13)); //출력값: Banana
+        console.log(str.slice(7)); //출력값: Banana, Kiwi -- 2번째 인덱스가 비어 있으면 끝까지
+        console.log(str.slice(-12,-6)); //출력값: Banana --뒤에서부터 거꾸로 감
+        console.log(str.slice(-2)); */
+
+        /*
+        //substring
+        var str="Apple, Banana, Kiwi"; //출력값: Banana
+        console.log(str.substring(7,13)); 
+
+        //substr
+        console.log(str.substring(7,6)); //7번 인덱스부터 6글자 */
+
+        /*var jumin1="070828";
+        console.log(jumin1.substr(0,2));
+        console.log(jumin1.substr(2,2));
+        console.log(jumin1.substr(4,2));
+
+        //더 효율적
+        var jumin2="2007-08-28";
+        console.log(jumin2.substring(0,jumin2.indexof("-"))); */
+
+        //replace
+        //var str1="Please visit here";
+        //var str2=str1.replace("here","there");
+        //console.log(str2);
+
+        /*var str1="Please visit here here here";
+        var str2=str1.replace("here","there"); //맨 앞에 하나만 바뀜
+        console.log(str2);
+
+        var str1="Please visit here here here";
+        var str2=str1.replace(/here/g,"there"); // /찾을 단어/: 정규 표현식(하나만 바뀜) /찾을 단어/g: 모두 바뀜  ㅎ:global(=전체)를 의미
+        console.log(str2);
+
+        var str1="Please visit HERE Here HeRe";
+        var str2=str1.replace(/here/ig,"there");  //i: ignore 대소문자 구별 X
+        console.log(str2)*/
+
+        /*
+        // toUpperCase: 모두 대문자로
+        var str1="Please visit HERE Here HeRe";
+        console.log(str1.toUpperCase()); 
+
+        // toUpperCase: 모두 소문자로
+        var str2="Please visit HERE Here HeRe";
+        console.log(str2.toLowerCase());
+
+        var txt1="Hello";
+        var txt2="World";
+        var txt3=txt1+" "+txt2;
+        console.log(txt3);
+
+        console.log(txt1.concat(txt2));
+        console.log(txt1.concat(" ",txt2));  
+
+        var str10="             Hello               World            .";
+        console.log(str10);
+        console.log(str10.trim()); // trim(): 앞 뒤 공백제거 
+
+        //padStart -- 많이 사용
+        var str11="15";
+        console.log(str11.padStart(8,0));  
+
+        //특정 자릿수를 통일하기 위해 사용 : 예) 날짜를 두자릿수로 통일
+        var str12="3";
+        console.log(str12.padStart(2,0));
+
+        //padEng
+        var str12="13";
+        console.log(str12.padEnd(4,0));
+
+        //charAt
+        var str13="Hello World";
+        console.log(str13.charAt(0));  */
+
+        //split
+        var tags="키보드,기계식,블루투스";
+        var arr1=tags.split(",");
+        console.log(arr1);
+
+        var birthday="2007-08-28";
+        var arr2=birthday.split("-");
+        console.log(arr2);
+        
+
+
+        
+
+
+        
+        
+
+
+    </script>
+</body>
+</html>
